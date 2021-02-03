@@ -28,5 +28,6 @@ namespace FilmCollector.Models
         public string LentTo { get; set; }
 
         public string Notes { get; set; }
+
     }
 }
