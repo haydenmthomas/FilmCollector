@@ -1,0 +1,24 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Confirmation";
+    ViewBag.Head = "Your film has been submitted";
+}
+
+@model FilmCollector.Models.FilmSubmission
+
+<div class="text-center">
+    @if (Model.Title == "Independence Day")
+    {
+        @:Independence Day cannot be added to this list. Try another movie.
+    }
+    else
+    {
+        @:Great! You can view the list of films by clicking on the button below
+    }
+    <br />
+    <br />
+    <br />
+    <a asp-action="Films"><button type="button" class="btn btn-secondary btn-lg">Films</button></a>
+</div>
