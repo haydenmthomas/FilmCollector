@@ -8,6 +8,10 @@ namespace FilmCollector.Models
 {
     public class FilmSubmission
     {
+        [Key]
+        [Required]
+        public int FilmID { get; set; }
+
         [Required]
         public string Category { get; set; }
 

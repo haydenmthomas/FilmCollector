@@ -7,10 +7,10 @@
     <link rel="shortcut icon" href="~/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="~/favicon.ico" type="image/ico" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
 </head>
-<body>
-    <header>
+<body style="background: #B0ADBD;">
+    <header style="background: #F9FAFB;">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">@ViewBag.Head</a>
@@ -24,10 +24,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Podcasts">My Podcasts</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Podcasts">Podcasts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SubmitFilm">Submit A Film</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SubmitFilm">Add Film</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Films">Films</a>
@@ -43,7 +43,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted text-center">
+    <footer style="background: #F9FAFB;"class="border-top footer text-muted text-center">
         <p>The Joel Hilton Film Collection, Copyright 2021</p>
     </footer>
 </body>
